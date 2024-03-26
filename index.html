@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,600;1,9..144,700;1,9..144,900&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="youtube.CSS">
+    <link rel="stylesheet" href="youtube-header.CSS">
+    <link rel="stylesheet" href="youtube-sidebar.CSS">
+    <title>Youtube Clone</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="first-box">
+        <div class="menu-icon-box">
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="45"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg><div class="tool-tip">Menu</div>
+        </div>
+        <div class="youtube-icon-box">
+          <svg class="youtube-logo-icon" xmlns="http://www.w3.org/2000/svg" height="800" width="1200" xml:space="preserve" y="0" x="0" id="Layer_1" version="1.1" viewBox="-57.15 -21.25 495.3 127.5"><style id="style7427" type="text/css">.st2{fill:#282828}</style><g id="g7433"><path id="path7429" d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z" fill="red"/><path id="polygon7431" fill="#fff" d="M48.6 24.3v36.4l31.6-18.2z"/></g><g id="g7451"><g id="g7449"><path id="path7435" d="M176.3 77.4c-2.4-1.6-4.1-4.1-5.1-7.6-1-3.4-1.5-8-1.5-13.6v-7.7c0-5.7.6-10.3 1.7-13.8 1.2-3.5 3-6 5.4-7.6 2.5-1.6 5.7-2.4 9.7-2.4 3.9 0 7.1.8 9.5 2.4 2.4 1.6 4.1 4.2 5.2 7.6 1.1 3.4 1.7 8 1.7 13.8v7.7c0 5.7-.5 10.2-1.6 13.7-1.1 3.4-2.8 6-5.2 7.6-2.4 1.6-5.7 2.4-9.8 2.4-4.2-.1-7.6-.9-10-2.5zm13.5-8.4c.7-1.7 1-4.6 1-8.5V43.9c0-3.8-.3-6.6-1-8.4-.7-1.8-1.8-2.6-3.5-2.6-1.6 0-2.8.9-3.4 2.6-.7 1.8-1 4.6-1 8.4v16.6c0 3.9.3 6.8 1 8.5.6 1.7 1.8 2.6 3.5 2.6 1.6 0 2.7-.8 3.4-2.6z" class="st2"/><path id="path7437" d="M360.9 56.3V59c0 3.4.1 6 .3 7.7.2 1.7.6 3 1.3 3.7.6.8 1.6 1.2 3 1.2 1.8 0 3-.7 3.7-2.1.7-1.4 1-3.7 1.1-7l10.3.6c.1.5.1 1.1.1 1.9 0 4.9-1.3 8.6-4 11-2.7 2.4-6.5 3.6-11.4 3.6-5.9 0-10-1.9-12.4-5.6-2.4-3.7-3.6-9.4-3.6-17.2v-9.3c0-8 1.2-13.8 3.7-17.5 2.5-3.7 6.7-5.5 12.6-5.5 4.1 0 7.3.8 9.5 2.3 2.2 1.5 3.7 3.9 4.6 7 .9 3.2 1.3 7.6 1.3 13.2v9.1h-20.1zm1.5-22.4c-.6.8-1 2-1.2 3.7-.2 1.7-.3 4.3-.3 7.8v3.8h8.8v-3.8c0-3.4-.1-6-.3-7.8-.2-1.8-.7-3-1.3-3.7-.6-.7-1.6-1.1-2.8-1.1-1.4-.1-2.3.3-2.9 1.1z" class="st2"/><path id="path7439" d="M147.1 55.3L133.5 6h11.9l4.8 22.3c1.2 5.5 2.1 10.2 2.7 14.1h.3c.4-2.8 1.3-7.4 2.7-14l5-22.4h11.9L159 55.3v23.6h-11.8V55.3z" class="st2"/><path id="path7441" d="M241.6 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z" class="st2"/><path id="path7443" d="M303.1 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z" class="st2"/><path id="path7445" d="M274.2 15.7h-11.9v63.2h-11.7V15.7h-11.9V6h35.5z" class="st2"/><path id="path7447" d="M342.8 34.2c-.7-3.4-1.9-5.8-3.5-7.3s-3.9-2.3-6.7-2.3c-2.2 0-4.3.6-6.2 1.9-1.9 1.2-3.4 2.9-4.4 4.9h-.1V3.3h-11.6v75.6h9.9l1.2-5h.3c.9 1.8 2.3 3.2 4.2 4.3 1.9 1 3.9 1.6 6.2 1.6 4.1 0 7-1.9 8.9-5.6 1.9-3.7 2.9-9.6 2.9-17.5v-8.4c-.1-6.1-.4-10.8-1.1-14.1zm-11 21.7c0 3.9-.2 6.9-.5 9.1-.3 2.2-.9 3.8-1.6 4.7-.8.9-1.8 1.4-3 1.4-1 0-1.9-.2-2.7-.7-.8-.5-1.5-1.2-2-2.1V38.1c.4-1.4 1.1-2.6 2.1-3.6 1-.9 2.1-1.4 3.2-1.4 1.2 0 2.2.5 2.8 1.4.7 1 1.1 2.6 1.4 4.8.3 2.3.4 5.5.4 9.6v7z" class="st2"/></g></g></svg>
+        </div> 
+      </div>
+      <div class="second-box"> 
+        <div class="search-bar-box"><input class="search-bar" type="text" placeholder="Search"></div>
+        <div class="search-button-box"><button class="search-icon-box"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button><div class="tool-tip">Search</div></div>
+        <div class="voice-search-button-box"><button class="voice-search-box"><svg class="voice-serach-icon" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25"><path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/></svg></button><div class="tool-tip">voice search</div></div>
+      </div>
+      <div class="third-box">
+        <div class="upload-icon-box"><svg class="upload-logo" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 -960 960 960" height="35"><path d="M360-320h80v-120h120v-80H440v-120h-80v120H240v80h120v120ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg><div class="tool-tip">Upload</div></div>
+        <div class="youtube-app-icon-box"><img class="youtube-app-icon" src="youtube-apps (1).svg" alt=""><div class="tool-tip">Apps</div></div>       
+        
+        <div class="search-icon-box2"><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25"><path d="M480-480Zm320 320H600q0-20-1.5-40t-4.5-40h206v-480H160v46q-20-3-40-4.5T80-680v-40q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160Zm-720 0v-120q50 0 85 35t35 85H80Zm200 0q0-83-58.5-141.5T80-360v-80q117 0 198.5 81.5T360-160h-80Zm160 0q0-75-28.5-140.5t-77-114q-48.5-48.5-114-77T80-520v-80q91 0 171 34.5T391-471q60 60 94.5 140T520-160h-80Z"/></svg></div>
+
+        <div class="notification-icon-box"><svg class="notification-logo" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 -960 960 960" ><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg><div class="notification-count">5</div><div class="tool-tip">notifications</div></div>
+
+      <div class="header-div"><div class="head-profile-div">M</div></div>
+
+        <div class="search-icon-box2"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></div>
+      </div>
+    </div>
+    <div class="side-bar">
+      <div class="first-grid-box">
+        <div class="home-icon-box"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></div><div class="sidebar-label">home</div>
+      </div>  
+      <div class="second-grid-box">
+        <div class="subscriptions-icon-box"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-80q-33 0-56.5-23.5T80-160v-400q0-33 23.5-56.5T160-640h640q33 0 56.5 23.5T880-560v400q0 33-23.5 56.5T800-80H160Zm0-80h640v-400H160v400Zm240-40 240-160-240-160v320ZM160-680v-80h640v80H160Zm120-120v-80h400v80H280ZM160-160v-400 400Z"/></svg></div><div class="sidebar-label">subscribe</div>
+      </div>
+      <div class="third-grid-box">
+        <div class="originals-icon-box"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m260-260 300-140 140-300-300 140-140 300Zm220-180q-17 0-28.5-11.5T440-480q0-17 11.5-28.5T480-520q17 0 28.5 11.5T520-480q0 17-11.5 28.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></div><div class="sidebar-label">explore</div>
+      </div>
+      <div class="fourth-grid-box">
+        <div class="library-icon-box"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M520-400h80v-120h120v-80H600v-120h-80v120H400v80h120v120ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg></div><div class="sidebar-label">library</div>
+      </div>
+      <div class="fifth-grid-box">
+        <div class="youtube-music-icon-box"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg></div><div class="sidebar-label">youtube music</div>
+      </div>
+    </div>
+   
+    <div class="main-grid">
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time1">6:29</div>
+          <div class="video-cover" id="video-cover1"><img class="cover" src="images/discipline.jpeg" alt=""></div>
+          <video onclick="playVideo1()" class="video-image" id="video-image1" src="videos/discipline_motivational_speech_h264_16728.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/discipline.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">discipline official</p>
+            </div>
+             <div>
+              <p class="second-text">Powerful speech 2021</p>
+            </div>
+            <div>
+              <P class="third-text">43M views &#183; 5 years ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time2">10:09</div>
+          <div class="video-cover" id="video-cover2"><img class="cover" src="images/oprah.jpeg" alt=""></div>
+          <video onclick="playVideo2()" class="video-image" id="video-image2" src="videos/10_minutes_to_start_your_day_right_motivational_speech_by_oprah_winfrey_you_need_to_watch_this_h264_952.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/oprah.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Start your Day right</p>
+            </div>
+             <div>
+              <p class="second-text">powerful motivational speech</p>
+            </div>
+            <div>
+              <P class="third-text">13M views &#183; 5 years ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time3">4:29</div>
+          <div class="video-cover" id="video-cover3"><img class="cover" src="images/unbroken.jpeg" alt=""></div>
+          <video onclick="playVideo3()" class="video-image" id="video-image3" src="videos/unbroken_motivational_video_h264_16643.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/unbroken.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">unbroken_official_video</p>
+            </div>
+             <div>
+              <p class="second-text">Westlife</p>
+            </div>
+            <div>
+              <P class="third-text">30M views &#183; 15 years ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time4">3:29</div>
+          <div class="video-cover" id="video-cover4"><img class="cover" src="images/runtown.jpeg" alt=""></div>
+          <video onclick="playVideo4()"  class="video-image" id="video-image4" src="videos/mad_over_you_official_music_video_runtown_h264_4705.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/runtown.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Mad Over you_official</p>
+            </div>
+             <div>
+              <p class="second-text">Runtown</p>
+            </div>
+            <div>
+              <P class="third-text">13M views &#183; 5 years ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time5">4:22</div>
+          <div class="video-cover" id="video-cover5"><img class="cover" src="images/buju.jpeg" alt=""></div>
+          <video onclick="playVideo5()" class="video-image" id="video-image5" src="videos/buju_outside_official_video_h264_4622.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/buju.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Outside_Official_video</p>
+            </div>
+             <div>
+              <p class="second-text">BNX_Buju</p>
+            </div>
+            <div>
+              <P class="third-text">20M views &#183; 2 Years ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time6">7:29</div>
+          <div class="video-cover" id="video-cover6"><img class="cover" src="images/lewis.jpeg" alt=""></div>
+          <video onclick="playVideo6()" class="video-image" id="video-image6" src="videos/lewis_capaldi_someone_you_loved_h264_4259.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/lewis.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Someone You Love</p>
+            </div>
+             <div>
+              <p class="second-text">Lewis_Capaldi</p>
+            </div>
+            <div>
+              <P class="third-text">3M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time7">6:30</div>
+          <div class="video-cover" id="video-cover7"><img class="cover" src="images/ruger.jpeg" alt=""></div>
+          <video onclick="playVideo7()" class="video-image" id="video-image7" src="videos/ruger_girlfriend_official_video_h264_4352.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/ruger.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Girlfriend_official video</p>
+            </div>
+             <div>
+              <p class="second-text">Ruger</p>
+            </div>
+            <div>
+              <P class="third-text">1M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time8">3:29</div>
+          <div class="video-cover" id="video-cover8"><img class="cover" src="images/bandana.jpeg" alt=""></div>
+          <video onclick="playVideo8()" class="video-image" id="video-image8" src="videos/fireboy_dml_asake_bandana_official_video_h264_4300.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/bandana.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Bandana official video</p>
+            </div>
+             <div>
+              <p class="second-text">Fireboy_Dml ft Asake</p>
+            </div>
+            <div>
+              <P class="third-text">6M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time9">3:29</div>
+          <div class="video-cover" id="video-cover9"><img class="cover" src="images/rihanna.jpeg" alt=""></div>
+          <video onclick="playVideo9()" class="video-image" id="video-image9" src="videos/rihanna_lift_me_up_h264_4182.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/rihanna.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Lift Me Up_ Official video</p>
+            </div>
+             <div>
+              <p class="second-text">Rihanna</p>
+            </div>
+            <div>
+              <P class="third-text">13M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time10">4:00</div>
+          <div class="video-cover" id="video-cover10"><img class="cover" src="images/cough.jpeg" alt=""></div>
+          <video onclick="playVideo10()" class="video-image" id="video-image10" src="videos/kizz_daniel_empire_cough_official_video_h264_4405.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/cough.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Cough _official_video</p>
+            </div>
+             <div>
+              <p class="second-text">Kizz_Daniel</p>
+            </div>
+            <div>
+              <P class="third-text">13M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time11">5:29</div>
+          <div class="video-cover" id="video-cover11"><img class="cover" src="images/bandana.jpeg" alt=""></div>
+          <video onclick="playVideo11()" class="video-image" id="video-image11" src="videos/fireboy_dml_asake_bandana_official_video_h264_4300.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/bandana.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Bandana official video</p>
+            </div>
+             <div>
+              <p class="second-text">Fireboy_Dml ft Asake</p>
+            </div>
+            <div>
+              <P class="third-text">6M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="video-div">
+          <div class="video-time" id="video-time12">3:29</div>
+          <div  class="video-cover" id="video-cover12"><img class="cover" src="images/buju.jpeg" alt=""></div>
+          <video onclick="playVideo12()" class="video-image" id="video-image12" src="videos/buju_outside_official_video_h264_4622.mp4" controls>
+        </div>    
+        <div class="author-box">
+          <div>
+             <img class="profile-image" src="images/buju.jpeg" alt="">
+          </div>
+          <div>
+             <div>
+              <p class="first-text">Outside_Official_video</p>
+            </div>
+             <div>
+              <p class="second-text">BNX_Buju</p>
+            </div>
+            <div>
+              <P class="third-text">20M views &#183; 11months ago</P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>    
+    <footer>
+      <div class="footers"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg><div class=labels>Home</div></div>
+      <div class="footers">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg>
+        <div class="labels">Shorts</div>
+      </div>
+
+      <div class="footers"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M160-80q-33 0-56.5-23.5T80-160v-400q0-33 23.5-56.5T160-640h640q33 0 56.5 23.5T880-560v400q0 33-23.5 56.5T800-80H160Zm0-80h640v-400H160v400Zm240-40 240-160-240-160v320ZM160-680v-80h640v80H160Zm120-120v-80h400v80H280ZM160-160v-400 400Z"/></svg><div class=labels>Subscriptions</div></div>
+
+      <div class="footers"><div class="profile-div">M</div><div class=labels>You</div></div>
+    </footer>
+    
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>
+
+
+
